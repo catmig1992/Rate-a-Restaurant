@@ -4,10 +4,31 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Restaurant Rating</title>
     <link rel="stylesheet" href="./Resources/CSS/styles.css" />
   </head>
   <body>
+    <img src="./Resources/images/cashier01.jpg" id="cashier" />
+    <p class="rate-prompt">
+      Please rate your experience with your cashier today.
+    </p>
+    <button type="button" id="cashier-1">1</button>
+    <button type="button" id="cashier-2">2</button>
+    <button type="button" id="cashier-3">3</button>
+    <button type="button" id="cashier-4">4</button>
+
+    <p class="rate-prompt">Please rate your overall experience today.</p>
+    <button type="button" id="overall-1">1</button>
+    <button type="button" id="overall-2">2</button>
+    <button type="button" id="overall-3">3</button>
+    <button type="button" id="overall-4">4</button>
+
+    <br />
+    <button type="button" id="show-hide">Display Ratings</button>
+    <div id="show-scores" style="display: none">
+      <p>The average cashier rating is <span id="cashierScore">0</span></p>
+      <p>The average overall rating is <span id="overallScore">0</span></p>
+    </div>
     <script src="./index.js"></script>
   </body>
 </html>
